@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+    <Object type="0xbb232" id="Ice Sage">
+      <DisplayId>Ice Sage</DisplayId>
+      <Group>Ice King</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dIceKing</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Size>130</Size>
+      <MaxHitPoints>90000</MaxHitPoints>
+      <Defense>20</Defense>
+      <XpMult>0.5</XpMult>
+      <Projectile id="0">
+         <ObjectId>Eternal Snowflake Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+		 <Size>120</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+	  <Projectile id="1">
+         <ObjectId>Artic Arrow</ObjectId>
+         <Damage>110</Damage>
+         <Speed>110</Speed>
+		 <Size>120</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+	  <Projectile id="2">
+         <ObjectId>Enchanted Ice Blade Slash</ObjectId>
+         <Damage>170</Damage>
+         <Speed>90</Speed>
+		 <Size>140</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Ice Sphere</ObjectId>
+         <Damage>110</Damage>
+         <Speed>90</Speed>
+		 <Size>120</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>	  
+	  
+   </Object>
+   
+   <Object type="0xbb233" id="Frost Knight">
+      <Group>Ice King</Group>
+      <DisplayId>Frost Knight</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dIceKing</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Speed>70</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+	  <Projectile id="1">
+         <ObjectId>Blue Blast</ObjectId>
+         <Speed>60</Speed>
+         <Damage>110</Damage>
+		 <ConditionEffect duration="2">Stunned</ConditionEffect>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Size>100</Size>
+      <Defense>50</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+   
+    <Object type="0xbb231" id="Frost Wizard">
+      <Group>Ice King</Group>
+      <DisplayId>Frost Wizard</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dIceKing</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Large Blue Shuriken</ObjectId>
+         <Speed>70</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Size>100</Size>
+      <Defense>50</Defense>
+      <XpMult>0.0</XpMult>
+   </Object>
+</Objects>
