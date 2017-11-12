@@ -13,7 +13,6 @@ namespace wServer.realm.worlds
 {
     public class XpRoom : World
     {
-        public int wave = 1;
         private bool ready = true;
         private bool waiting;
         public XpRoom()
@@ -68,14 +67,6 @@ namespace wServer.realm.worlds
                 {
                     if (waiting) return;
                     ready = false;
-                    wave++;
-                    foreach (KeyValuePair<int, Player> i in Players)
-                    {
-                        i.Value.Client.SendPacket(new ArenaNextWavePacket
-                        {
-                            Type = wave
-                        });
-                    }
                     waiting = true;
                     Timers.Add(new WorldTimer(5000, (world, t) =>
                     {
